@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Display and Positioning Cheatsheet</title>
+  <link href="styles.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Space+Mono&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="intro">
+    <h1>CSS Display and Positioning Cheatsheet</h1>
+    <h2>A summary of one of the hardest CSS topics I've learned so far.</h2>
+  </div>
+
+  <div class =maintable>
+  <table class="nospacing">
+    <tr>
+      <th>Property</th>
+      <th>Value</th>
+      <th>Description</th>
+    </tr>
+
+    <tr>
+      <td>Z-index</td>
+      <td><span class='code'>z-index:1</span></td>
+      <td>The CSS z-index property specifies how far back or how far forward an element will appear on a web page when it overlaps other elements.</td>
+    </tr>
+
+    <tr>
+      <td>Static position</td>
+      <td><span class='code'>position:static</span></td>
+      <td>Default position in html.</td>
+    </tr>
+
+    <tr>
+      <td>Fixed position</td>
+      <td><span class='code'>position:fixed</span></td>
+      <td>When the CSS position has a value of fixed, it is set/pinned to a specific spot on a page. The fixed element stays the same regardless of scrolling. The navigation bar is a great example of an element that is often set to position:fixed;, enabling the user to scroll through the web page and still access the navigation bar.</td>
+    </tr>
+
+    <tr>
+      <td>Absolute position</td>
+      <td><span class='code'>position:absolute</span></td>
+      <td>Position the element relative to the closest parent element that has a relative or absolute positioning. Absolute will remove an element from the document flow. Use 'top', 'left', 'bottom' and 'right' to position the element anywhere in the document.</td>
+    </tr>
+
+    <tr>
+      <td>Relative position</td>
+      <td><span class='code'>position:relative</span></td>
+      <td>Place an element relatively to its default (original) position. You <span class='emphasise'>have to</span> use offset properties like 'top' etc. to determine where it should position. Otherwise nothing will change (and the element acts as it has 'static' position).</td>
+    </tr>
+
+    <tr>
+      <td>Inline display</td>
+      <td><span class='code'>display:inline</span></td>
+      <td>Inline elements take up as little space as possible, flow horizontally, and cannot have their width or height manually adjusted.</td>
+    </tr>
+
+    <tr>
+      <td>Block display</td>
+      <td><span class='code'>display:block</span></td>
+      <td>Block-level elements take up the full width of their container with line breaks before and after, and can have their height and width manually adjusted.</td>
+    </tr>
+
+    <tr>
+      <td>Inline-block display</td>
+      <td><span class='code'>display:inline-block</span></td>
+      <td>Inline-block elements can appear next to each other, and can have their width and height manually adjusted.</td>
+    </tr>
+
+    <tr>
+      <td>Float</td>
+      <td><span class='code'>float:right</span> or <span class='code'>float:left</span></td>
+      <td>The CSS float property determines how far left or how far right an element should float within its parent element. The value left floats an element to the left side of its container and the value right floats an element to the right side of its container. For the property float, the width of the container must be specified or the element will assume the full width of its containing element.</td>
+    </tr>
+
+    <tr>
+      <td>Clear</td>
+      <td><span class='code'>clear:left</span>, <span class='code'>clear:right</span>, <span class='code'>clear:both</span> or <span class='code'>clear:none</span></td>
+      <td>The CSS clear property specifies how an element should behave when it bumps into another element within the same containing element.The clear is usually used in combination with elements having the CSS float property. This determines on which sides floating elements are allowed to float.</td>
+    </tr>
+
+   </table>   
+   </div>
+</body>
+
+</html>
